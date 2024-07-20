@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./preview.jpg)
+![](./product-list-with-cart-main-finished/preview.jpg)
 
 ### Links
 
