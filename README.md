@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/elo-manny/Product-list-with-cart)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [view code](https://github.com/elo-manny/Product-list-with-cart)
+- Live Site URL: [view project](https://elo-manny.github.io/Product-list-with-cart/)
 
 ## My process
 
