@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Dessert App">
+  <meta name="author" content="M|Code">
+  <title>Dessert Application</title>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="main">
+    <h1 class="title fs-big">Dessert</h1>
+
+    <!-- All Desserts -->
+    <article>
+      <ul class="js-all-desserts all-desserts"></ul>
+    </article>
+
+    <!-- Cart -->
+    <article class="cart">
+      <div>
+        <h2 class="accent-texts fs-medium-x2">
+          Your Cart (<span class="js-cart-items-count">0</span>)
+        </h2>
+
+        <div class="js-cart-empty cart__empty">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="Empty Cart">
+          <p class="secondary-texts fw-bold">Your added items will appear here</p>
+        </div>
+
+        <div class="js-cart-full cart__full-container hidden">
+          <ul class="js-selected-desserts cart__full"></ul>
+
+          <div class="flex-wrapper payment-details">
+            <p>Order Total</p>
+            <p class="fw-big fs-medium-x2 js-total-pay-amount"></p>
+          </div>
+
+          <div class="carbon-delivery flex-wrapper">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral">
+            <p>This is a <strong>carbon-neutral</strong> delivery</p>
+          </div>
+
+          <button class="js-confirm-order primary-btn" role="button" aria-label="Confirm Order">
+            Confirm Order
+          </button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Order Confirmed Popup -->
+  <aside class="js-order-confirmed-popup order-confirmed-popup hidden">
+    <div class="top">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="Order Confirmed">
+      <h2 class="fs-big">Order Confirmed</h2>
+      <p class="secondary-texts fs-400">We hope you enjoy your food!</p>
+    </div>
+
+    <ul class="js-confirmed-orders-list confrimed-order-list">
+
+    </ul>
+
+    <button class="js-start-new-order primary-btn" role="button" aria-label="Start New Order">
+      Start New Order
+    </button>
+  </aside>
+
+  <!-- Overlay -->
+  <div class="js-overlay overlay hidden"></div>
+
+  <!-- Custom Scripts -->
+  <script type="module" src="./javascript/main.js"></script>
+</body>
+
+</html>
